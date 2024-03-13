@@ -4,4 +4,4 @@
 
 [EN]: This is an example of a Python program that teachs API requests
 
-YouTube Link: 
+YouTube Link: https://www.youtube.com/watch?v=LgIl8BjQXCw

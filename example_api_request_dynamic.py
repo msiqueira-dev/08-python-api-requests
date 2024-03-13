@@ -2,8 +2,17 @@ import requests
 
 from urllib.parse import urlencode
 
-class Model_Api():
-
+class Model_Api_Dynamic():
+    """ 
+        PT-BR:
+            Isso é um comentário padrão de classe e será ignorado pelo Python
+            A classe Model_Api_Dynamic é uma classe que tem como propósito ter métodos que fazem requisições genéricas a APIs
+            assim como tratamentos genéricos para os dados de retorno.
+        EN: 
+            This is a function comment and will be ignored by Python.
+            The class Model_Api_Dynamic is a class that has the porpuse of having functions that can make dynamic API calls
+            as well as generic treatment of the return data.
+    """
     list_static_parameters = None
     list_result = None
     
@@ -54,7 +63,7 @@ class Model_Api():
             self.list_result.append({f"{key}":f"{json_dict}"})      
 
 host = 'api.discogs.com'
-model_api_obj = Model_Api()
+model_api_obj = Model_Api_Dynamic()
 model_api_obj.url_parameters_add({'page': '1'})
 model_api_obj.url_parameters_add({'per_page': '2'})
 content = model_api_obj.get(host, '/artists/14602/releases?', True)
